@@ -1,0 +1,99 @@
+/* combined.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f0;
+  }
+  
+  .combined-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .left-side, .right-side {
+    width: 48%;
+  }
+  
+  h2.form-title, h2.section-title {
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  form, .manage-users-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, select, button {
+    width: 7;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .user-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-card {
+    background-color: #e8f5e9;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-actions {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-update, .btn-delete {
+    padding: 10px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-update:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-delete {
+    background-color: #f44336;
+  }
+  
+  .btn-delete:hover {
+    background-color: #d32f2f;
+  }
+  
+  .btn-submit {
+    background-color: #4CAF50;
+  }
+  
+  .btn-submit:hover {
+    background-color: #45a049;
+  }
+  
