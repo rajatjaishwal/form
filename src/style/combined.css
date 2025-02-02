@@ -1,99 +1,141 @@
-/* combined.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8f0;
-  }
-  
-  .combined-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .left-side, .right-side {
-    width: 48%;
-  }
-  
-  h2.form-title, h2.section-title {
-    color: #4CAF50;
-    text-align: center;
-  }
-  
-  form, .manage-users-container {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  input, select, button {
-    width: 7;
-    padding: 12px;
-    margin: 8px 0;
-    border: 2px solid #4CAF50;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .user-list {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .user-card {
-    background-color: #e8f5e9;
-    margin: 15px 0;
-    padding: 10px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .user-info {
-    flex: 1;
-  }
-  
-  .user-actions {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .btn-update, .btn-delete {
-    padding: 10px;
-    margin: 5px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .btn-update:hover {
-    background-color: #45a049;
-  }
-  
-  .btn-delete {
-    background-color: #f44336;
-  }
-  
-  .btn-delete:hover {
-    background-color: #d32f2f;
-  }
-  
-  .btn-submit {
-    background-color: #4CAF50;
-  }
-  
-  .btn-submit:hover {
-    background-color: #45a049;
-  }
-  
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e8f5e9; /* Light green background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #c8e6c9; /* Soft green */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1b5e20; /* Dark green */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2e7d32; /* Dark green */
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border: 1px solid #81c784;
+  border-radius: 5px;
+  background-color: #f1f8e9; /* Lightest green */
+}
+
+/* Row Layout for Side-by-Side Fields */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.row .input-group {
+  width: 48%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* GST Verification Button */
+.gst-verification {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.verify-btn {
+  padding: 10px;
+  background-color: #388e3c; /* Strong green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.verify-btn:hover {
+  background-color: #2e7d32;
+}
+
+/* Submit Button */
+.btn-submit {
+  background-color: #388e3c; /* Strong green */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #2e7d32;
+}
+.gst-success {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.gst-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.placeholder-img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder.c_name{
+  width: 80%;
+}
